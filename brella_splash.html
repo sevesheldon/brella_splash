@@ -8,79 +8,125 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 
-        <!-- Bootstrap CDN - compiled CSS & JS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<style type="text/css">
 
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
-		<style type="text/css">
+body:before{
+    content:"";
+    width:100%;
+    height:100%;
+    display:block;
+}
 
+#wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
-		</style>
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	min-height: 100%;
+}
+
+.column {
+	flex: auto;
+}
+
+.column &:last-child { 
+	margin-right: 0; 
+}
+
+.column &:first-child { 
+	margin-left: 0; 
+}
+
+#col-1 {
+	width: 40%
+}
+
+img {
+	width: 100%;
+	margin: -2px 0; 
+}
+
+#col-2 {
+	width: 35%
+}
+
+/*#col-2 img {
+	width: 100%
+}*/
+
+#col-3 {
+	width: 25%
+}
+
+/*#col-3 img {
+	width: 100%
+}*/
+
+</style>
+
 	</head>
 	<body>
+		<div id="wrapper">
 
+			<section class="columns">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
+				<div class="column" id="col-1">
 
 					<div id="brella-logo">
-						<img src="https://img.frl/yzs5l">
+						<img src="https://image.frl/i/qx5dyvej4cyhhx11.png">
 					</div>
 
 					<div id="high-noon">
-						<img src="https://img.frl/9s1fu">
+						<img src="https://image.frl/i/sd2kcvcbicl9t981.png">
 					</div>
 
 				</div>
-			</div>
-		</div>	
 
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
+				<div class="column" id="col-2">
 
 					<div id="burger">
-						<img src="https://img.frl/wjb0m">
+						<img src="https://image.frl/i/al924emhrgg5ml2u.png">
 					</div>	
 
 					<div id="matrix-logo">
-						<img src="https://img.frl/utstm">
+						<img src="https://image.frl/i/xpksz92inn5rbrtq.jpg">
 					</div>
 
 					<div id="chicken-wings">
-						<img src="https://img.frl/bbjf1">
+						<img src="https://image.frl/i/rzabspwhav6fe8y2.png">
 					</div>					
 
 				</div>
-			</div>
-		</div>	
 
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
+				<div class="column" id="col-3">
 
 					<div id="happy-hour">
-						<img src="https://img.frl/o3xxv">
+						<img src="https://image.frl/i/vjqsdwf0bfynnort.png">
 
 					</div>
 
 					<div id="brella-burger">
-						<img src="https://img.frl/vaud3">
+						<img src="https://image.frl/i/h73znazwd08i7axd.png">
 					</div>
-				
-				</div>
-			</div>
-		</div>						
 
+				</div>						
 
+			</section>
 
-		
-
-
+		</div>	
 	</body>
 
 </html>
