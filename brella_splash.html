@@ -19,10 +19,6 @@ body {
 	background-color: #000;
 }
 
-#wrapper {
-
-}
-
 .columns {
 	display: flex;
 }
@@ -33,7 +29,6 @@ body {
 
 img {
 	width: 100%;
-	/*margin: -2px 0; */
 }
 
 #col-1 {
@@ -52,6 +47,9 @@ img {
 #captive-portal {
 	background-image: url("http://sevesheldon.com/matrix/brellas/img/high-noon-burger.png");
 	position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #captive-portal-content {
@@ -160,7 +158,6 @@ button:hover {
 
 }
 
-
 @media screen and (max-width: 1199px) {
 
 	#captive-portal-content {
@@ -249,6 +246,10 @@ button:hover {
 
 	#col-1, #col-2, #col-3 {
 		width: 80%
+	}
+
+	#burger {
+		display: none;
 	}
 
 	#captive-portal {
