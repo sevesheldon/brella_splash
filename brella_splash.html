@@ -8,80 +8,227 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
 <style type="text/css">
 
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-body:before{
-    content:"";
-    width:100%;
-    height:100%;
-    display:block;
+body {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #000;
 }
 
 #wrapper {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+
 }
 
 .columns {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	min-height: 100%;
 }
 
 .column {
 	flex: auto;
 }
 
-.column &:last-child { 
+/*.column &:last-child { 
 	margin-right: 0; 
 }
 
 .column &:first-child { 
 	margin-left: 0; 
-}
-
-#col-1 {
-	width: 40%
-}
+}*/
 
 img {
 	width: 100%;
-	margin: -2px 0; 
+	/*margin: -2px 0; */
+}
+
+#col-1 {
+	width: 39.822%
 }
 
 #col-2 {
-	width: 35%
+	width: 33.905%
 }
-
-/*#col-2 img {
-	width: 100%
-}*/
 
 #col-3 {
-	width: 25%
+	width: 26.4%
 }
 
-/*#col-3 img {
-	width: 100%
-}*/
+
+#captive-portal {
+	background-image: url("http://sevesheldon.com/matrix/brellas/img/high-noon-burger.png");
+	position: relative;
+}
+
+#captive-portal-content {
+	background-color: rgba(248, 247, 216, 0.7);
+    padding: 10px 20px ; 
+}
+
+#captive-portal-text {
+	text-align: center;
+	line-height: 1;
+	font-size: 1vw;
+}
+
+#captive-portal-text h4 {
+	padding: 2% 0;
+	font-weight: bold;	
+}
+
+#captive-portal-text p {
+	margin-bottom: 0;
+}
+
+#matrix-logo {
+    width: 60%;
+    margin: auto;
+}
+
+form {
+	font-size: 1vw;
+}
+
+label {
+    font-size: 1vw;
+}
+
+.input-field {
+    margin: 10px auto 0;
+    width: fit-content;
+}
+
+.button {
+    margin: auto;
+    width: fit-content;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1800px) {
+
+	#captive-portal-content {
+		padding-bottom: 8%;
+	}
+
+}
+
+@media screen and (max-width: 1485px) {
+
+	#captive-portal-content {
+		padding-bottom: 7%;
+	}
+
+}
+
+@media screen and (max-width: 1444px) {
+
+	#captive-portal-content {
+		padding-bottom: 6%;
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+
+	#captive-portal-content {
+		padding-bottom: 7.5%;
+	}
+
+}
+
+@media screen and (max-width: 1371px) {
+
+	#captive-portal-content {
+		padding-bottom: 5.5%;
+	}
+
+}
+
+@media screen and (max-width: 1257px) {
+
+	#captive-portal-content {
+		padding-bottom: 5%;
+	}
+
+}
+
+@media screen and (max-width: 1229px) {
+
+	#captive-portal-content {
+		padding-bottom: 2%;
+	}
+
+}
+
+
+@media screen and (max-width: 1199px) {
+
+	#captive-portal-content {
+		padding-bottom: 6%;
+	}
+
+}
+
+@media screen and (max-width: 1173px) {
+
+	#captive-portal-content {
+		padding-bottom: 3%;
+	}
+
+}
+
+@media screen and (max-width: 1130px) {
+
+	#captive-portal-content {
+		padding-bottom: 1%;
+		padding-top: 1%;
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+
+	#captive-portal-content {
+		padding-bottom: 3%;
+	}
+
+}
+
+@media screen and (max-width: 1081px) {
+
+	#captive-portal-content {
+		padding-bottom: 2%;
+	}
+
+@media screen and (max-width: 1046px) {
+
+	#captive-portal-content {
+		padding-bottom: 1%;
+		padding-top: 0;
+	}
+
+}
+
+@media screen and (max-width: 788px) {
+
+/*This is where we need to start change to mobile divs*/
+
 
 </style>
 
 	</head>
 	<body>
+
 		<div id="wrapper">
 
-			<section class="columns">
+			<div class="columns">
 
 				<div class="column" id="col-1">
 
@@ -101,9 +248,40 @@ img {
 						<img src="http://sevesheldon.com/matrix/brellas/img/burger.png">
 					</div>	
 
-					<div id="matrix-logo">
-						<img src="http://sevesheldon.com/matrix/brellas/img/captiveportal-matrixlogo.jpg">
-					</div>
+					<div id="captive-portal">
+
+						<div id="captive-portal-content">
+
+							<div id="matrix-logo">
+								<img src="http://sevesheldon.com/matrix/brellas/img/captiveportal-matrixlogo.jpg">
+							</div>
+
+							<div id="captive-portal-text">
+								<h4>Terms of Use</h4>
+								<p>By accepting this agreement and accessing the wireless network, you acknowledge that you are of legal age, you have read and understood, and agree to be bound by this agreement</p>
+								<p>(*)The wireless network service is provided by the property owners and is completely at their discretion. Your access to the internet may be blocked, suspended, or terminated at any time for any reason.</p>
+								<p>(*)You agree to not sue the wireless network for any purpose that is unlawful or otherwise prohibited and you are fully responsible for your use.</p>
+								<p>(*)The wireless network is provided "as is" without warranties of any kind, either expressed or implied.</p>
+								<p>This wireless network is powered by Matrix Networks.</p>
+								<p>For assistance accessing the wireless network call 1-877-457-4947</p>
+							</div>
+
+							<form action="" method="post">
+
+								<div class="input-field">
+								    <label for="access-code">Access Code:</label>
+								    <input type="text" id="access-code" name="user_access_code">
+								</div>
+
+								<div class="button">
+								  <button type="submit">Access The Web</button>
+								</div>
+
+							</form>
+
+						</div>	
+
+					</div>	
 
 					<div id="chicken-wings">
 						<img src="http://sevesheldon.com/matrix/brellas/img/crispy-chicken-wings.png">
@@ -115,7 +293,6 @@ img {
 
 					<div id="happy-hour">
 						<img src="http://sevesheldon.com/matrix/brellas/img/happy-hour.png">
-
 					</div>
 
 					<div id="brella-burger">
@@ -124,7 +301,7 @@ img {
 
 				</div>						
 
-			</section>
+			</div>
 
 		</div>	
 	</body>
