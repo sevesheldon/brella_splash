@@ -31,14 +31,6 @@ body {
 	flex: auto;
 }
 
-/*.column &:last-child { 
-	margin-right: 0; 
-}
-
-.column &:first-child { 
-	margin-left: 0; 
-}*/
-
 img {
 	width: 100%;
 	/*margin: -2px 0; */
@@ -75,7 +67,8 @@ img {
 
 #captive-portal-text h4 {
 	padding: 2% 0;
-	font-weight: bold;	
+	font-weight: bold;
+	font-size: 2vw;	
 }
 
 #captive-portal-text p {
@@ -114,7 +107,7 @@ button:hover {
 @media screen and (max-width: 1800px) {
 
 	#captive-portal-content {
-		padding-bottom: 8%;
+		padding-bottom: 6%;
 	}
 
 }
@@ -122,7 +115,7 @@ button:hover {
 @media screen and (max-width: 1485px) {
 
 	#captive-portal-content {
-		padding-bottom: 7%;
+		padding-bottom: 5%;
 	}
 
 }
@@ -130,7 +123,7 @@ button:hover {
 @media screen and (max-width: 1444px) {
 
 	#captive-portal-content {
-		padding-bottom: 6%;
+		padding-bottom: 4%;
 	}
 
 }
@@ -138,7 +131,7 @@ button:hover {
 @media screen and (max-width: 1400px) {
 
 	#captive-portal-content {
-		padding-bottom: 7.5%;
+		padding-bottom: 6%;
 	}
 
 }
@@ -206,19 +199,92 @@ button:hover {
 	#captive-portal-content {
 		padding-bottom: 2%;
 	}
+}
 
 @media screen and (max-width: 1046px) {
 
 	#captive-portal-content {
 		padding-bottom: 1%;
-		padding-top: 0;
+	}
+
+	#captive-portal-text h4 {
+	    padding: 3% 0;
+	}	
+
+}
+
+@media screen and (max-width: 960px) {
+
+	#captive-portal-content {
+		padding-bottom: 0%;
 	}
 
 }
 
-@media screen and (max-width: 788px) {
 
-/*This is where we need to start change to mobile divs*/
+@media screen and (max-width: 900px) {
+
+	#captive-portal-content {
+		padding-bottom: 1%;
+	}	
+}
+
+@media screen and (max-width: 860px) {
+	
+	#captive-portal-text h4 {
+	    padding: 1% 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.columns {
+		display: block;
+	}
+
+	.column {
+		display: block;
+		margin: auto;
+	}
+
+	#col-1, #col-2, #col-3 {
+		width: 80%
+	}
+
+	#captive-portal {
+		background-position: center;
+	}
+
+	#captive-portal-content {
+	    padding: 20px;
+	}
+
+	#captive-portal-text {
+		font-size: 12px;
+		padding: 15px 15%;
+	}
+
+	#captive-portal-text h4 {
+	    padding: 2% 0;
+	}
+
+	form {
+		font-size: 12px;
+	}
+
+	label {
+	    font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+
+
+	#col-1, #col-2, #col-3 {
+		width: 100%;
+	}
+
+}
 
 
 </style>
@@ -253,7 +319,7 @@ button:hover {
 						<div id="captive-portal-content">
 
 							<div id="matrix-logo">
-								<img src="http://sevesheldon.com/matrix/brellas/img/captiveportal-matrixlogo.jpg">
+								<img src="http://sevesheldon.com/matrix/brellas/img/matrix_logo-transparent.png">
 							</div>
 
 							<div id="captive-portal-text">
